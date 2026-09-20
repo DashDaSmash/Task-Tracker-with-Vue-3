@@ -1,75 +1,48 @@
-# Nuxt Minimal Starter
+# Nuxt 3 & Vue 3 Task Tracker
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A modern, component-driven task management application built with **Nuxt 3**, **Vue 3 (Composition API)**, **TypeScript**, and **Tailwind CSS**. Built as part of a structured practice workflow focused on frontend architectural patterns, state management, and type safety.
 
-## Setup
+## UI Preview
 
-Make sure to install dependencies:
+![Task Tracker UI Preview](./.github/assets/ui-preview.png)
+
+---
+
+## Features & Architecture
+
+* **Vue 3 Composition API:** Uses `<script setup lang="ts">` with `ref`, `computed`, and strict type definitions.
+* **Component-Driven Design:** Decoupled `TaskCard.vue` UI component driven by `defineProps` and `defineEmits` contracts.
+* **Nuxt 3 Auto-Imports:** Takes advantage of Nuxt's auto-import engine for composables and component resolution.
+* **Separation of Concerns:** Shared interface contracts isolated inside standard `types/task.ts` definition files to avoid cross-component coupling.
+* **Tailwind Styling:** Clean, light purple themed UI styled with modern utility classes.
+
+---
+
+## Tech Stack
+
+* **Framework:** [Nuxt 3](https://nuxt.com/)
+* **Library:** [Vue 3](https://vuejs.org/)
+* **Language:** [TypeScript](https://www.typescriptlang.org/)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+
+---
+
+## Getting Started
+
+### 1. Prerequisites
+
+Ensure you have **Node.js** (v18.x or later) installed.
+
+### 2. Installation
+
+Clone the repository and install dependencies:
 
 ```bash
-# npm
+# Clone the repository
+git clone [https://github.com/DashDaSmash/day1-vue-practice.git](https://github.com/DashDaSmash/day1-vue-practice.git)
+
+# Navigate into project directory
+cd day1-vue-practice
+
+# Install dependencies
 npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
